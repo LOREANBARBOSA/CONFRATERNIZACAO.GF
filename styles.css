@@ -8,7 +8,7 @@ body {background-image: url(Fundo.jpeg);
             font-size: 50px; 
             text-align: center;
             color:yellow; 
-            background-color: #1e00ffac; margin: 40px ;
+            background-color: #1e00ffac; margin: 80px ;
             padding: 3px; font-weight:bolder;
             width:max-content; height:max-content;
             position:absolute;
@@ -28,7 +28,7 @@ body {background-image: url(Fundo.jpeg);
             font-size: 20px; 
             text-align:center;
             color:#f9f9f9; 
-            background-color: #1e00ffac; margin: 180px ;
+            background-color: #1e00ffac; margin: 210px;
             padding: 3px; font-weight:initial;
             width:max-content; height:max-content;
             position: absolute;
@@ -42,11 +42,25 @@ body {background-image: url(Fundo.jpeg);
             font-size: 20px; 
             text-align:center;
             color:#f9f9f9; 
-            background-color: #1e00ffac; margin: 260px ;
+            background-color: #1e00ffac; margin: 290px ;
             padding: 3px; font-weight:initial;
             width:max-content; height:max-content;
             position: absolute;
-            left: 40%; 
+            left: 20%; 
             transform: translate(-50%, -50%);
+
+}
+#icon{
+            color:#f9f9f9; 
+            margin: 17.2%;
+            padding: 0px; 
+            width:auto; height:max-content;
+            position: bottom;
+            left: 13%; width: auto;
+            width: 35px;
+            height: 39px;
+            transform: translate(-50%, -50%);
+
+}
 
 }
