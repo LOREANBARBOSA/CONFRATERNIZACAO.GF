@@ -1,0 +1,152 @@
+/* Fundo da página */
+body {
+    background-image: url("Fundo.jpeg");
+    background-repeat: repeat;           /* repete a imagem em mosaico */
+    background-size: contain;            /* mantém proporção da imagem */
+    background-position: top left;       /* começa no canto superior esquerdo */
+    background-attachment: fixed;        /* deixa o fundo fixo */
+    background-color: rgba(0,0,0,0.7);   /* camada escura */
+    background-blend-mode: darken;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    text-align: center;
+}
+
+/* Título */
+#title {
+    font-size: 50px;
+    text-align: center;
+    color: yellow;
+    background-color: #1e00ffac;
+    margin: 40px auto;
+    padding: 10px 20px;
+    font-weight: bolder;
+    width: fit-content;
+    border-radius: 8px;
+    margin-top: 120px;
+}
+
+/* Logo */
+.logo {
+    width: 200px;
+    height: auto;
+    position: fixed;   /* fixa na tela */
+    top: 0;            /* sempre no topo */
+    left: 50%;         /* centraliza horizontalmente */
+    transform: translateX(-50%); /* corrige centralização */
+    z-index: 1000;     /* garante que fique acima dos outros elementos */
+}
+
+img {
+    width: 200px;
+    height: auto;
+    display:block;
+    margin: 20px auto;
+}
+
+/* Texto principal */
+#text {
+    font-size: 20px;
+    text-align: center;
+    color: #f9f9f9;
+    background-color: #1e00ffac;
+    margin: 30px auto;
+    padding: 15px;
+    font-weight: normal;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+/* Container da data */
+.date-container {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap: 10px;                /* espaço entre ícone e texto */
+    margin: 20px auto;
+    background-color: #1e00ffac;
+    padding: 10px 20px;
+    width: fit-content;
+    border-radius: 8px;
+}
+
+/* Ícone */
+#icon {
+    width: auto;
+    height: 39px;
+}
+
+/* Ícone de Horário */
+#hora {
+    width: auto;
+    height: 39px;
+}
+
+/* Texto da data */
+#date {
+    font-size: 20px;
+    color: #f9f9f9;
+    margin: 0;
+}
+
+/* Local */
+.local {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap: 10px;                /* espaço entre ícone e texto */
+    margin: 20px auto;
+    background-color: #1e00ffac;
+    padding: 10px 20px;
+    width: fit-content;
+    border-radius: 8px;
+}
+/* Texto do local */
+#tlocal {
+    font-size: 20px;
+    color: #f9f9f9;
+    margin: 0;
+}
+
+/* Link do Local*/
+#local-link{
+    font-size: 20px;
+    color: yellow;
+    margin: 0;
+}
+
+/* Tabela da galeria */
+.galeria {
+    margin: 30px auto;
+    border: 2px solid #1e00ffac;
+    border-collapse: collapse;
+    text-align: center;
+    width: 300px;
+}
+
+.galeria th {
+    background-color: #1e00ffac;
+    color: yellow;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.galeria td {
+    padding: 15px;
+    color: #f9f9f9;
+}
+
+/* Imagem clicável */
+.foto-local {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.foto-local:hover {
+    transform: scale(1.05);
+}

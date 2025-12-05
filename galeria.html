@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria de Fotos - Confraternização GF</title>
+  <link rel="icon" type="image/png" href="ARTE.png">
+  <link rel="stylesheet" href="styles(galeria).css">
+</head>
+<body>
+
+  <h1>Galeria de Fotos - Confraternização GF</h1>
+
+  <div class="gallery">
+    <img src="IMGENS DO LOCAL/foto1.jpeg" alt="Foto 1" onclick="openLightbox(0)">
+    <img src="IMGENS DO LOCAL/foto2.jpeg" alt="Foto 2" onclick="openLightbox(1)">
+    <img src="IMGENS DO LOCAL/foto3.jpeg" alt="Foto 3" onclick="openLightbox(2)">
+    <img src="IMGENS DO LOCAL/foto4.jpeg" alt="Foto 4" onclick="openLightbox(3)">
+    <img src="IMGENS DO LOCAL/foto5.jpeg" alt="Foto 5" onclick="openLightbox(4)">
+    <img src="IMGENS DO LOCAL/foto6.jpeg" alt="Foto 6" onclick="openLightbox(5)">
+    <img src="IMGENS DO LOCAL/foto7.jpeg" alt="Foto 7" onclick="openLightbox(6)">
+    <img src="IMGENS DO LOCAL/foto8.jpeg" alt="Foto 8" onclick="openLightbox(7)">
+    <img src="IMGENS DO LOCAL/foto9.jpeg" alt="Foto 9" onclick="openLightbox(8)">
+    <img src="IMGENS DO LOCAL/foto10.jpeg" alt="Foto 10" onclick="openLightbox(9)">
+    <img src="IMGENS DO LOCAL/foto11.jpeg" alt="Foto 11" onclick="openLightbox(10)">
+    <img src="IMGENS DO LOCAL/foto12.jpeg" alt="Foto 12" onclick="openLightbox(11)">
+    <img src="IMGENS DO LOCAL/foto13.jpeg" alt="Foto 13" onclick="openLightbox(12)">
+    <img src="IMGENS DO LOCAL/foto14.jpeg" alt="Foto 14" onclick="openLightbox(13)">
+    <!-- Miniaturas para vídeos -->
+    <img src="IMGENS DO LOCAL/thumb_video1.jpg" alt="Vídeo 1" onclick="openLightbox(14)">
+    <img src="IMGENS DO LOCAL/thumb_video2.jpg" alt="Vídeo 2" onclick="openLightbox(15)">
+    <img src="IMGENS DO LOCAL/thumb_video3.jpg" alt="Vídeo 3" onclick="openLightbox(16)">
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
+    <span class="next" onclick="changeSlide(1)">&#10095;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <video class="lightbox-content" id="lightbox-video" controls></video>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
