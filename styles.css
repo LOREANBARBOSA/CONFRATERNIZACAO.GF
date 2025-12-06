@@ -24,12 +24,14 @@ body {
   margin: 40px auto;
   padding: 10px 20px;
   font-weight: bolder;
-  display: inline-block;     /* permite que o fundo se ajuste ao conteúdo */
-  max-width: 90%;            /* limita a largura em telas pequenas */
-  word-wrap: break-word;     /* quebra o texto se necessário */
+  display: inline-block;
+  max-width: 90%;            
+  white-space: normal;        /* permite quebra de linha */
+  word-break: keep-all;       /* não quebra dentro das palavras */
   border-radius: 8px;
   margin-top: 120px;
 }
+
 
 
 /* Logo */
@@ -187,6 +189,7 @@ img {
     width: 150px;
   }
 }
+
 
 
 
