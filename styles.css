@@ -1,11 +1,11 @@
 /* Fundo da página */
 body {
     background-image: url("Fundo.jpeg");
-    background-repeat: repeat;           /* repete a imagem em mosaico */
-    background-size: contain;            /* mantém proporção da imagem */
-    background-position: top left;       /* começa no canto superior esquerdo */
-    background-attachment: fixed;        /* deixa o fundo fixo */
-    background-color: rgba(0,0,0,0.7);   /* camada escura */
+    background-repeat: repeat;           
+    background-size: contain;            
+    background-position: top left;       
+    background-attachment: fixed;        
+    background-color: rgba(0,0,0,0.7);   
     background-blend-mode: darken;
     margin: 0;
     padding: 0;
@@ -13,7 +13,6 @@ body {
     color: #fff;
     text-align: center;
 }
-
 
 /* Título */
 #title {
@@ -26,13 +25,14 @@ body {
   font-weight: bolder;
   display: inline-block;
   max-width: 90%;            
-  white-space: normal;        /* permite quebra de linha */
-  word-break: keep-all;       /* não quebra dentro das palavras */
   border-radius: 8px;
   margin-top: 120px;
+
+  /* 🔑 ajustes de quebra */
+  white-space: normal;          /* permite quebra */
+  word-break: normal;           /* não quebra dentro da palavra */
+  overflow-wrap: break-word;    /* quebra só entre palavras */
 }
-
-
 
 /* Logo */
 .logo {
@@ -157,9 +157,13 @@ img {
   }
 
   #title {
-    font-size: 32px;
-    margin-top: 80px;
+    font-size: 28px;       /* menor no celular */
+    line-height: 1.2;      /* altura da linha ajustada */
+    margin-top: 60px;
     padding: 8px 12px;
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: break-word;
   }
 
   #text {
@@ -189,6 +193,8 @@ img {
     width: 150px;
   }
 }
+
+
 
 
 
