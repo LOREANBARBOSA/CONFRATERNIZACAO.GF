@@ -17,17 +17,20 @@ body {
 
 /* Título */
 #title {
-    font-size: 50px;
-    text-align: center;
-    color: yellow;
-    background-color: #1e00ffac;
-    margin: 40px auto;
-    padding: 10px 20px;
-    font-weight: bolder;
-    width: fit-content;
-    border-radius: 8px;
-    margin-top: 120px;
+  font-size: 50px;
+  text-align: center;
+  color: yellow;
+  background-color: #1e00ffac;
+  margin: 40px auto;
+  padding: 10px 20px;
+  font-weight: bolder;
+  display: inline-block;     /* permite que o fundo se ajuste ao conteúdo */
+  max-width: 90%;            /* limita a largura em telas pequenas */
+  word-wrap: break-word;     /* quebra o texto se necessário */
+  border-radius: 8px;
+  margin-top: 120px;
 }
+
 
 /* Logo */
 .logo {
@@ -184,5 +187,6 @@ img {
     width: 150px;
   }
 }
+
 
 
